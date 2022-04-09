@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+
+
+
+/*? estilos */
+
+body{
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    header{
+        background-color: #0f1629;
+        color: white;
+    }
+    menu{
+        
+        background-color: #ef3c4f;
+        color: white;
+    }
+    .hero{
+        background-color: #4c86c6;
+        color: white;
+    }
+    main{
+        background-color: #24344b;
+        color: white;
+    }
+    .image{
+        background-color: #c1e4e6;
+    }
+    .extra{
+        background-color: #4dbd97;
+    }
+    .banner{
+        background-color: #fed169;
+    }
+}
+
+
+/*?  Media query [Desktop] */
+body{
+    display: grid;
+    .geral{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    header{ 
+        height: 50px;
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+    .hero{
+        height: 500px;
+        grid-column: 1 / span 5;
+        grid-row: 2;
+    }
+    menu{
+        padding: 0;
+        margin: 0;
+        grid-column: 2 / span 4;
+        grid-row: 1 ;
+    }
+    main{
+        height: 320px;
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 2;
+    }
+    .image{
+        grid-column: 5 / span 1;
+        grid-row: 4;
+    }
+    .extra{
+        grid-column: 5 / span 1;
+        grid-row: 5;
+    }
+    .banner{
+        
+        height: 180px;
+        grid-column: 1 / span 5;
+        grid-row: 6;
+    }
+}
+
+/*?  Media query [Tablet 768px] */
+@media (max-width:768px){
+    body{
+        display: grid;
+        .geral{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        header{ 
+            height: 80px;
+            grid-column: 1 / span 6;
+            grid-row: 1;
+        }
+        .hero{
+            height: 300px;
+            grid-column: 1 / span 6;
+            grid-row: 2;
+        }
+        menu{
+            padding: 0;
+            margin: 0;
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 6;
+        }
+        main{
+            height: 300px;
+            grid-column: 2 / span 5;
+            grid-row: 4;
+        }
+        .image{
+            grid-row: 6;
+            grid-column: 5 / span 2;
+        }
+        .extra{
+            height: 150px;
+            grid-column: 2 / span 3;
+            grid-row: 6;
+        }
+        .banner{
+            
+            height: 140px;
+            grid-column: 2 / span 5;
+            grid-row: 5;
+        }
+    }
+}
+
+
+/*?  Media query [Movil 425px] */
+@media (max-width:425px){
+    body{
+        display: block;
+        .geral{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            width: 100%;
+            height: 80px;
+        }
+        menu{
+            padding: 0;
+            margin: 0;
+            height: 80px;
+        }
+        .hero{
+            height: 300px;
+        }
+        main{
+            height: 110px;
+        }
+        .image{
+            height: 80px;
+        }
+        .extra{
+            height: 80px;
+        }
+        .banner{
+            height: 90px;
+        }
+    }
+}
+
+
+
+
+
